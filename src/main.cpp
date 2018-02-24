@@ -86,7 +86,7 @@ int main()
           		iss >> ro;
           		iss >> theta;
           		iss >> ro_dot;
-          		// Making sure taht theta is between -pi and pi
+          		// Making sure that theta is between -pi and pi
           		theta = atan2(sin(theta),cos(theta));
           		meas_package.raw_measurements_ << ro,theta, ro_dot;
           		iss >> timestamp;
